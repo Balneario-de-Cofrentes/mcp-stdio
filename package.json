@@ -1,0 +1,48 @@
+{
+  "name": "mcp-stdio",
+  "version": "0.1.0",
+  "description": "Zero-dependency MCP server for stdio transport. Just tools, nothing else.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stdio",
+    "ai",
+    "agent",
+    "tools",
+    "json-rpc",
+    "zero-dependency"
+  ],
+  "author": "Balneario de Cofrentes",
+  "license": "MIT",
+  "homepage": "https://github.com/Balneario-de-Cofrentes/mcp-stdio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Balneario-de-Cofrentes/mcp-stdio.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
