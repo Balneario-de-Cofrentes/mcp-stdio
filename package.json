@@ -19,7 +19,8 @@
   "scripts": {
     "build": "tsc",
     "test": "node --test test/",
-    "prepublishOnly": "tsc"
+    "prepare": "tsc",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "mcp",
